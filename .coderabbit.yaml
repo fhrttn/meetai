@@ -1,8 +1,14 @@
-language: "tr" # İncelemeleri ve yorumları Türkçe yapar
+language: "tr-TR" # Türkçe inceleme ve özetler için standart format
+
 reviews:
-  profile: "chill" # "assertive" (katı) veya "chill" (daha esnek)
+  profile: "chill" # Esnek, daha az gürültülü inceleme modu ("assertive" yerine)
+  high_level_summary: true # Üst düzey PR özeti
+  walkthrough: true # Dosya bazlı detaylı değişiklik dökümü
+  sequence_diagrams: true # Akış diyagramları (Sequence Diagram)
+  poem: true # PR sonundaki şiir
   auto_review:
     enabled: true
-    drafts: false # Draft PR'ları incelemez
+    drafts: false # Taslak (Draft) halindeki PR'ları incelemez
+
 chat:
-  auto_reply: true # PR altındaki sorularınıza yanıt verir
+  auto_reply: true # PR yorumlarında sorduğunuz sorulara otomatik yanıt verir
